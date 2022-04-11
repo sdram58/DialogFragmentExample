@@ -28,7 +28,8 @@ class LoginDialogFragment(val dialogResult: DialogResult) : DialogFragment() {
         }
 
         binding.btnLogin.setOnClickListener {
-            dialogResult(Login(
+            dialogResult(
+                Login(
                 binding.etUser.text.toString(),
                 binding.etPass.text.toString()))
             dismiss()
