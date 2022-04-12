@@ -21,6 +21,7 @@ class LoginDialogFragment(val dialogResult: DialogResult) : DialogFragment() {
         savedInstanceState: Bundle?,
     ): View? {
         binding = FragmentLoginDialogBinding.inflate(inflater, container, false)
+
         // Inflate the layout for this fragment
 
         binding.btnCancel.setOnClickListener{
